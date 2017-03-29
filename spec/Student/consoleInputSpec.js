@@ -18,19 +18,20 @@ describe("student test", () => {
     const parseStudentInfo = require('../../src/Student/parseStudentInfo.js')
     const calculateStudentScore = require('../../src/Student/calculateStudentScore.js')
     const getStudentAllInfo = require('../../src/Student/getStudentAllInfo.js')
+    const addStudentInfo = require('../../src/Student/addStudentInfo.js')
     it('should return sudent info when get student string', () => {
         let stString = 'tigar,123,han,1,math:100,chinese:100,english:100,program:100'
 
         let expectResult = {
             name: 'tigar',
             stuNumber: 123,
-            nation:'han',
-            className:1,
-            subjectGrade:{
-                math:100,
-                chinese:100,
-                english:100,
-                program:100
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 100,
+                chinese: 100,
+                english: 100,
+                program: 100
             }
         }
 
@@ -38,16 +39,16 @@ describe("student test", () => {
     })
 
     it('should return sudent average and total score when get student info', () => {
-       let  studentInfo = {
+        let studentInfo = {
             name: 'tigar',
             stuNumber: 123,
-            nation:'han',
-            className:1,
-            subjectGrade:{
-                math:100,
-                chinese:100,
-                english:100,
-                program:100
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 100,
+                chinese: 100,
+                english: 100,
+                program: 100
             }
         }
 
@@ -64,13 +65,13 @@ describe("student test", () => {
         let studentInfo = {
             name: 'tigar',
             stuNumber: 123,
-            nation:'han',
-            className:1,
-            subjectGrade:{
-                math:100,
-                chinese:100,
-                english:100,
-                program:100
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 100,
+                chinese: 100,
+                english: 100,
+                program: 100
             }
         }
 
@@ -80,13 +81,75 @@ describe("student test", () => {
         }
 
         expectResult = {
-            studentInfo:studentInfo,
-            studentScoreStatistics:studentScoreStatistics
+            studentInfo: studentInfo,
+            studentScoreStatistics: studentScoreStatistics
         }
 
         expect(getStudentAllInfo(stString)).toEqual(expectResult)
     })
 
+    it('should return  student info list ', () => {
+        let studentScoreLsit = []
+        let studentInfo = {
+            name: 'tigar',
+            stuNumber: 123,
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 100,
+                chinese: 100,
+                english: 100,
+                program: 100
+            },
+            studentScoreStatistics: {
+                totalScore: 400,
+                aveScore: 100
+            }
+        }
+        let studentInfo1 = {
+            name: 'tian',
+            stuNumber: 124,
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 98,
+                chinese: 98,
+                english: 98,
+                program: 98
+            },
+            studentScoreStatistics: {
+                totalScore: 382,
+                aveScore: 92
+            }
+        }
+
+
+        let expectResult = [
+            {
+                students: [studentInfo],
+                className: 1,
+                classAveScore: 400,
+                classMidScore: 400
+            }
+
+        ]
+
+        expect(addStudentInfo(studentInfo, studentScoreLsit)).toEqual(expectResult)
+        let expectResult1 = [
+            {
+                students: [studentInfo,studentInfo1],
+                className: 1,
+                classAveScore: 391,
+                classMidScore: 382
+            }
+
+        ]
+        // let studentScoreLsit1 = addStudentInfo(studentInfo,studentScoreLsit)
+
+        expect(addStudentInfo(studentInfo1, studentScoreLsit)).toEqual(expectResult1)
+
+    })
 })
+
 
 
