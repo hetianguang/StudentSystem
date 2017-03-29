@@ -68,16 +68,16 @@ describe("student test", () => {
             nation: 'han',
             className: 1,
             subjectGrade: {
-                math: 100,
-                chinese: 100,
-                english: 100,
-                program: 100
+                math: 75,
+                chinese: 76,
+                english: 81,
+                program: 95
             }
         }
 
         let studentScoreStatistics = {
-            totalScore: 400,
-            aveScore: 100
+            totalScore: 327,
+            aveScore: 81.8
         }
 
         expectResult = {
@@ -153,22 +153,22 @@ describe("student test", () => {
             nation: 'han',
             className: 1,
             subjectGrade: {
-                math: 98,
-                chinese: 98,
-                english: 98,
-                program: 98
+                math: 75,
+                chinese: 76,
+                english: 81,
+                program: 95
             },
             studentScoreStatistics: {
-                totalScore: 392,
-                aveScore: 98
+                totalScore: 327,
+                aveScore: 81.8
             }
         }
         let expectResult2 = [
             {
                 students: [studentInfo1,studentInfo3],
                 className: 1,
-                classAveScore: 392,
-                classMidScore: 392
+                classAveScore: 359.5,
+                classMidScore: 327
             }
 
         ]

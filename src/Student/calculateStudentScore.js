@@ -5,8 +5,7 @@
 const calculateStudentScore = studentInfo => {
 
     let totalScore = studentInfo.subjectGrade.chinese + studentInfo.subjectGrade.english + studentInfo.subjectGrade.math + studentInfo.subjectGrade.program
-    let aveScore = (totalScore)/4
-
+    let aveScore = Number(parseFloat(totalScore/4).toFixed(1))
     return {
         totalScore: totalScore,
         aveScore: aveScore

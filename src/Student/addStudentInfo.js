@@ -47,9 +47,7 @@ const calcuateAveScore = students => {
     for(let student of students) {
         total += student.studentScoreStatistics.totalScore
     }
-    console.log("********",total)
-    return parseInt(total/students.length)
-    console.log("********",total/students.length)
+    return Number(parseFloat(total/students.length).toFixed(1))
 }
 
 const calcuateMidScore = students => {
