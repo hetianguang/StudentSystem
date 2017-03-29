@@ -4,19 +4,28 @@
 
 const addStudentInfo = (studentInfo,studentScoreLsit) => {
 
-    let studentClassNumber = studentInfo.className
-    let students = []
+    let isUpdate = 0
+    let updataStudentInfo = null
+    let idnex = 0
     for(let aclass of studentScoreLsit) {
-        if(aclass.className === studentClassNumber) {
+        if(aclass.className === studentInfo.className) {
             for(let student of aclass.students) {
                 if(student.stuNumber === studentInfo.stuNumber){
-                    student = studentInfo
-                    aclass.classAveScore = calcuateAveScore(aclass.students)
-                    aclass.classMidScore = calcuateMidScore(aclass.students)
-                    return studentScoreLsit
+                    index = aclass.students.indexOf(student)
+                    updataStudentInfo = studentInfo
+                    isUpdate = 1
+                    break
+
                 }
             }
-            console.log("********")
+            if(isUpdate) {
+                aclass.students.splice(index,1)
+                aclass.students.push(updataStudentInfo)
+                aclass.classAveScore = calcuateAveScore(aclass.students)
+                aclass.classMidScore = calcuateMidScore(aclass.students)
+                console.log("&&&&&&",aclass.students)
+                return studentScoreLsit
+            }
             aclass.students.push(studentInfo)
             aclass.classAveScore = calcuateAveScore(aclass.students)
             aclass.classMidScore = calcuateMidScore(aclass.students)

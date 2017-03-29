@@ -61,7 +61,7 @@ describe("student test", () => {
     })
 
     it('should return all student info when input student Stirng', () => {
-        let stString = 'tigar,123,han,1,math:100,chinese:100,english:100,program:100'
+        let stString = 'tigar,123,han,1,math:75,chinese:76,english:81,program:95'
         let studentInfo = {
             name: 'tigar',
             stuNumber: 123,
@@ -118,8 +118,8 @@ describe("student test", () => {
                 program: 98
             },
             studentScoreStatistics: {
-                totalScore: 382,
-                aveScore: 92
+                totalScore: 392,
+                aveScore: 98
             }
         }
 
@@ -139,14 +139,41 @@ describe("student test", () => {
             {
                 students: [studentInfo,studentInfo1],
                 className: 1,
-                classAveScore: 391,
-                classMidScore: 382
+                classAveScore: 396,
+                classMidScore: 392
             }
 
         ]
-        // let studentScoreLsit1 = addStudentInfo(studentInfo,studentScoreLsit)
 
         expect(addStudentInfo(studentInfo1, studentScoreLsit)).toEqual(expectResult1)
+
+        let studentInfo3 = {
+            name: 'tigar',
+            stuNumber: 123,
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 98,
+                chinese: 98,
+                english: 98,
+                program: 98
+            },
+            studentScoreStatistics: {
+                totalScore: 392,
+                aveScore: 98
+            }
+        }
+        let expectResult2 = [
+            {
+                students: [studentInfo1,studentInfo3],
+                className: 1,
+                classAveScore: 392,
+                classMidScore: 392
+            }
+
+        ]
+
+        expect(addStudentInfo(studentInfo3, studentScoreLsit)).toEqual(expectResult2)
 
     })
 })
