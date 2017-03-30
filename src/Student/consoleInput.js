@@ -2,10 +2,17 @@
  * Created by tghe on 3/30/17.
  */
 
+
+const getPrintStuNumber = require('./getPrintStuNumber')
+const outputFormat = require('./outputFormat')
+const getStudentScoreInfo = require('./getStudentScoreInfo')
+const addStudentInfo = require('./addStudentInfo')
+const getStudentAllInfo = require('./getStudentAllInfo')
+
 let studentScoreLsit = []
+let status = '0'
+
 const inputStudentScore = stString => {
-    const addStudentInfo = require('./addStudentInfo')
-    const getStudentAllInfo = require('./getStudentAllInfo')
     let studentInfo = getStudentAllInfo(stString)
      studentScoreLsit = addStudentInfo(studentInfo,studentScoreLsit)
     console.log(studentScoreLsit)
@@ -13,14 +20,9 @@ const inputStudentScore = stString => {
 }
 
 const outputStudentInfo = strString => {
-    const getPrintStuNumber = require('./getPrintStuNumber')
-    const outputFormat = require('./outputFormat')
-    const getStudentScoreInfo = require('./getStudentScoreInfo')
     let str = getPrintStuNumber(strString)
     let studentScoreList = getStudentScoreInfo(str,studentScoreLsit)
-    console.log(outputFormat(studentScoreList))
     return outputFormat(studentScoreList)
-
 }
 
 const title = '1:添加学生成绩，2:打印学生成绩，3:退出系统'+'\n'
@@ -29,9 +31,7 @@ var readline = require('readline')
 const rl = readline.createInterface( {
     input: process.stdin,
     output: process.stdout,
-
 });
-let status = '0'
 function consoleInput (text) {
     rl.question(text, function(answer) {
         switch (status) {
