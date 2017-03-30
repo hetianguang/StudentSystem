@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de38b56e-478c-443d-b5e9-397e211edfa8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Student/consoleInput.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/Student/consoleInputSpec.js" afterPath="$PROJECT_DIR$/spec/Student/consoleInputSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Student/getStudentAllInfo.js" afterPath="$PROJECT_DIR$/src/Student/getStudentAllInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Student/consoleInput.js" afterPath="$PROJECT_DIR$/src/Student/consoleInput.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,24 +17,22 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="consoleInputSpec.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/Student/consoleInputSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#38#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="196">
+              <caret line="25" column="84" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="84" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getStudentAllInfo.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getStudentAllInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Student/getStudentAllInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            <state relative-caret-position="270">
+              <caret line="20" column="54" lean-forward="false" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -48,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/Student/getStudentScoreInfo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <caret line="41" column="0" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -59,8 +55,8 @@
       <file leaf-file-name="outputFormat.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Student/outputFormat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="29" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -68,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consoleInput.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="consoleInput.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Student/consoleInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="214">
+              <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -83,7 +79,7 @@
       <file leaf-file-name="addStudentInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Student/addStudentInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="510">
               <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="30" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
@@ -107,8 +103,8 @@
       <file leaf-file-name="getPrintStuNumber.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Student/getPrintStuNumber.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="30">
+              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="23" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -141,9 +137,9 @@
         <option value="$PROJECT_DIR$/src/Student/outputFormat.js" />
         <option value="$PROJECT_DIR$/src/Student/consoleInout.js" />
         <option value="$PROJECT_DIR$/src/Student/parseStudentInfo.js" />
-        <option value="$PROJECT_DIR$/src/Student/consoleInput.js" />
         <option value="$PROJECT_DIR$/spec/Student/consoleInputSpec.js" />
         <option value="$PROJECT_DIR$/src/Student/getStudentAllInfo.js" />
+        <option value="$PROJECT_DIR$/src/Student/consoleInput.js" />
       </list>
     </option>
   </component>
@@ -176,8 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,6 +236,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,12 +348,13 @@
       <updated>1490770256720</updated>
       <workItem from="1490770258643" duration="11057000" />
       <workItem from="1490794182828" duration="2105000" />
-      <workItem from="1490841484548" duration="9832000" />
+      <workItem from="1490841484548" duration="16047000" />
+      <workItem from="1490874389043" duration="2226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22994000" />
+    <option name="totallyTimeSpent" value="31435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="775" extended-state="0" />
@@ -366,13 +363,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -412,6 +409,84 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spec/Student/consoleInputSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="84" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/getStudentAllInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/getStudentScoreInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/outputFormat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/addStudentInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/parseStudentInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/getPrintStuNumber.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/consoleInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="68" column="6" lean-forward="true" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -460,9 +535,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2490">
           <caret line="168" column="52" lean-forward="false" selection-start-line="168" selection-start-column="40" selection-end-line="168" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -480,10 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Student/getPrintStuNumber.js">
+    <entry file="file://$PROJECT_DIR$/src/Student/addStudentInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="510">
+          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="30" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
@@ -500,10 +573,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Student/addStudentInfo.js">
+    <entry file="file://$PROJECT_DIR$/src/Student/getPrintStuNumber.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="30" />
+        <state relative-caret-position="30">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/getStudentAllInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="54" lean-forward="false" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student/outputFormat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="29" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
@@ -513,27 +606,7 @@
     <entry file="file://$PROJECT_DIR$/src/Student/getStudentScoreInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Student/outputFormat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Student/consoleInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <caret line="41" column="0" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
@@ -542,18 +615,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/Student/consoleInputSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="196">
+          <caret line="25" column="84" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Student/getStudentAllInfo.js">
+    <entry file="file://$PROJECT_DIR$/src/Student/consoleInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        <state relative-caret-position="214">
+          <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
