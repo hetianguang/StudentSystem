@@ -84,7 +84,16 @@ describe("student test", () => {
         }
 
         expectResult = {
-            studentInfo: studentInfo,
+            name: 'tigar',
+            stuNumber: 123,
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 75,
+                chinese: 76,
+                english: 81,
+                program: 95
+            },
             studentScoreStatistics: studentScoreStatistics
         }
 

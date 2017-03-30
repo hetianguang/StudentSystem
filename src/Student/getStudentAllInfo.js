@@ -11,7 +11,16 @@ const getStudentAllInfo = stString => {
     let studentScoreStatistics = calculateStudentScore(studentInfo)
 
     return {
-        studentInfo:studentInfo,
+        name: studentInfo.name,
+        stuNumber: studentInfo.stuNumber,
+        nation: studentInfo.nation,
+        className: studentInfo.className,
+        subjectGrade: {
+            math: studentInfo.subjectGrade.math,
+            chinese: studentInfo.subjectGrade.chinese,
+            english: studentInfo.subjectGrade.english,
+            program: studentInfo.subjectGrade.program
+        },
         studentScoreStatistics:studentScoreStatistics
     }
 }
