@@ -20,6 +20,8 @@ describe("student test", () => {
     const getStudentAllInfo = require('../../src/Student/getStudentAllInfo.js')
     const addStudentInfo = require('../../src/Student/addStudentInfo.js')
     const getPrintStuNumber = require('../../src/Student/getPrintStuNumber.js')
+    const getStudentScoreInfo = require('../../src/Student/getStudentScoreInfo.js')
+    const outputFormat = require('../../src/Student/outputFormat.js')
     it('should return sudent info when get student string', () => {
         let stString = 'tigar,123,han,1,math:100,chinese:100,english:100,program:100'
 
@@ -192,6 +194,101 @@ describe("student test", () => {
         let strString = '123,1#23'
 
         expect(getPrintStuNumber(strString)).toEqual(null)
+    })
+
+
+
+    it('should return print string when input array number', () => {
+
+        let studentScoreLsit = [];
+        let strStirng = ['123']
+        let studentInfo = {
+            name: 'tigar',
+            stuNumber: 123,
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 100,
+                chinese: 100,
+                english: 100,
+                program: 100
+            },
+            studentScoreStatistics: {
+                totalScore: 400,
+                aveScore: 100
+            }
+        }
+        let studentInfo1 = {
+            name: 'tian',
+            stuNumber: 124,
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 98,
+                chinese: 98,
+                english: 98,
+                program: 98
+            },
+            studentScoreStatistics: {
+                totalScore: 392,
+                aveScore: 98
+            }
+        }
+        let studentScoreLsit1 = addStudentInfo(studentInfo, studentScoreLsit)
+        let studentScoreLsit2 = addStudentInfo(studentInfo1, studentScoreLsit1)
+
+        let expectResult = [{
+            students: [studentInfo],
+            className: 1,
+            classAveScore: 396,
+            classMidScore: 392
+        }]
+
+        expect(getStudentScoreInfo(strStirng,studentScoreLsit2)).toEqual(expectResult)
+
+        let expectResult1 = [{
+            students: [studentInfo,studentInfo1],
+            className: 1,
+            classAveScore: 396,
+            classMidScore: 392
+        }]
+
+        expect(getStudentScoreInfo(['123','124'],studentScoreLsit2)).toEqual(expectResult1)
+    })
+
+    it('print format', () => {
+        let studentInfo = {
+            name: 'tigar',
+            stuNumber: 123,
+            nation: 'han',
+            className: 1,
+            subjectGrade: {
+                math: 100,
+                chinese: 100,
+                english: 100,
+                program: 100
+            },
+            studentScoreStatistics: {
+                totalScore: 400,
+                aveScore: 100
+            }
+        }
+        let printScore = [{
+            students: [studentInfo],
+            className: 1,
+            classAveScore: 400,
+            classMidScore: 400
+        }]
+
+        expectResult = '成绩单'+'\n'+
+                '姓名'+ '|'+'数学'+ '|'+'语文'+ '|'+'英语'+ '|'+'编程'+ '|'+'平均分'+ '|'+'总分'+ '\n'+
+                '＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝' + '\n'+
+                'tigar|100|100|100|100|100|400'+'\n'+
+                '==========================================='+'\n'+
+                '班级平均成绩:400'+'\n'+
+                '班级中位数:400'
+
+        expect(outputFormat(printScore)).toEqual(expectResult)
     })
 })
 
