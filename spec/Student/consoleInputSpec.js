@@ -19,6 +19,7 @@ describe("student test", () => {
     const calculateStudentScore = require('../../src/Student/calculateStudentScore.js')
     const getStudentAllInfo = require('../../src/Student/getStudentAllInfo.js')
     const addStudentInfo = require('../../src/Student/addStudentInfo.js')
+    const getPrintStuNumber = require('../../src/Student/getPrintStuNumber.js')
     it('should return sudent info when get student string', () => {
         let stString = 'tigar,123,han,1,math:100,chinese:100,english:100,program:100'
 
@@ -175,6 +176,22 @@ describe("student test", () => {
 
         expect(addStudentInfo(studentInfo3, studentScoreLsit)).toEqual(expectResult2)
 
+    })
+
+
+
+    it("should return students number when iuput a string", () => {
+
+        let strString = '123,124'
+        let expectResult = ['123','124']
+
+        expect(getPrintStuNumber(strString)).toEqual(expectResult)
+    })
+    it("should return null when iuput a string unlawful char", () => {
+
+        let strString = '123,1#23'
+
+        expect(getPrintStuNumber(strString)).toEqual(null)
     })
 })
 
