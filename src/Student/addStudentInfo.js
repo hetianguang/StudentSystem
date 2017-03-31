@@ -23,7 +23,6 @@ const addStudentInfo = (studentInfo,studentScoreLsit) => {
                 aclass.students.push(updataStudentInfo)
                 aclass.classAveScore = calcuateAveScore(aclass.students)
                 aclass.classMidScore = calcuateMidScore(aclass.students)
-                console.log("&&&&&&",aclass.students)
                 return studentScoreLsit
             }
             aclass.students.push(studentInfo)

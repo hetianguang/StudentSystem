@@ -7,7 +7,7 @@ const getStudentScoreInfo = (strString,studentScoreLsit2) => {
     let result = []
     for(let studentNub of strString) {
         let studentNumber = parseInt(studentNub)
-        for(aclass of studentScoreLsit2) {
+        for(let aclass of studentScoreLsit2) {
             let isfound = 0
             let studentInfo = {}
             for(let student of aclass.students) {
