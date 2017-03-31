@@ -4,16 +4,6 @@
 
 
 describe("student test", () => {
-    // var readline = require('readline'),
-    //     rl = readline.createInterface(process.stdin, process.stdout);
-    // rl.question('What is your favorite food?', function(answer) {
-    //     console.log('Oh, so your favorite food is ' + answer);
-    // });
-    //
-    // it('should return hello console when input hello console on console', () => {
-    //
-    //    expect(userInput).toEqual('hello console')
-    // })
 
     const parseStudentInfo = require('../../src/Student/parseStudentInfo.js')
     const calculateStudentScore = require('../../src/Student/calculateStudentScore.js')

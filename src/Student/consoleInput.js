@@ -19,6 +19,7 @@ const inputStudentScore = stString => {
     return studentScoreLsit
 }
 
+
 const outputStudentInfo = strString => {
     let str = getPrintStuNumber(strString)
     let studentScoreList = getStudentScoreInfo(str,studentScoreLsit)
