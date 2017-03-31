@@ -4,13 +4,20 @@
 
 const calculateStudentScore = studentInfo => {
 
-    let totalScore = studentInfo.subjectGrade.chinese + studentInfo.subjectGrade.english + studentInfo.subjectGrade.math + studentInfo.subjectGrade.program
-    let aveScore = Number(parseFloat(totalScore/4).toFixed(1))
+
+    let totalScore = calculateTotalScore(studentInfo)
+    let aveScore = calcuateAveScore(studentInfo,totalScore)
     return {
         totalScore: totalScore,
         aveScore: aveScore
     }
 
+}
+function calculateTotalScore(studentInfo) {
+    return studentInfo.subjectGrade.chinese + studentInfo.subjectGrade.english + studentInfo.subjectGrade.math + studentInfo.subjectGrade.program;
+}
+function calcuateAveScore(studentInfo,totalScore) {
+    return Number(parseFloat(totalScore / 4).toFixed(1));
 }
 
 module.exports = calculateStudentScore

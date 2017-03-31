@@ -5,7 +5,6 @@
 const parseStudentInfo = stString => {
 
     let studentBasicInfoArray = stString.split(',')
-    let studentSubjectGrade = studentBasicInfoArray[4].split(',')
     return {
         name: studentBasicInfoArray[0],
         stuNumber: parseInt(studentBasicInfoArray[1]),
