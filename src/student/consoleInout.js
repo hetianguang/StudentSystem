@@ -3,11 +3,11 @@
  */
 
 
-const getPrintStuNumber = require('./getPrintStuNumber')
-const outputFormat = require('./outputFormat')
-const getStudentScoreInfo = require('./getStudentScoreInfo')
-const addStudentInfo = require('./addStudentInfo')
-const getStudentAllInfo = require('./getStudentAllInfo')
+const getPrintStuNumber = require('./informationOutput/getPrintStuNumber')
+const outputFormat = require('./informationOutput/outputFormat')
+const getStudentScoreInfo = require('./informationOutput/getStudentScoreInfo')
+const addStudentInfo = require('./informationInput/addStudentInfo')
+const getStudentAllInfo = require('./informationInput/getStudentAllInfo')
 
 let studentScoreLsit = []
 let status = '0'

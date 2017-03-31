@@ -5,13 +5,13 @@
 
 describe("student test", () => {
 
-    const parseStudentInfo = require('../../src/Student/parseStudentInfo.js')
-    const calculateStudentScore = require('../../src/Student/calculateStudentScore.js')
-    const getStudentAllInfo = require('../../src/Student/getStudentAllInfo.js')
-    const addStudentInfo = require('../../src/Student/addStudentInfo.js')
-    const getPrintStuNumber = require('../../src/Student/getPrintStuNumber.js')
-    const getStudentScoreInfo = require('../../src/Student/getStudentScoreInfo.js')
-    const outputFormat = require('../../src/Student/outputFormat.js')
+    const parseStudentInfo = require('../../src/student/informationInput/parseStudentInfo.js')
+    const calculateStudentScore = require('../../src/student/informationInput/calculateStudentScore.js')
+    const getStudentAllInfo = require('../../src/student/informationInput/getStudentAllInfo.js')
+    const addStudentInfo = require('../../src/student/informationInput/addStudentInfo.js')
+    const getPrintStuNumber = require('../../src/student/informationOutput/getPrintStuNumber.js')
+    const getStudentScoreInfo = require('../../src/student/informationOutput/getStudentScoreInfo.js')
+    const outputFormat = require('../../src/student/informationOutput/outputFormat.js')
     it('should return sudent info when get student string', () => {
         let stString = 'tigar,123,han,1,math:100,chinese:100,english:100,program:100'
 
