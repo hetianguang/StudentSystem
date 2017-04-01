@@ -3,11 +3,11 @@
  */
 
 
-const getStudentAllInfo = stString => {
+const getStudentAllInfo = consoleInputString => {
 
     const parseStudentInfo = require('./parseStudentInfo.js')
     const calculateStudentScore = require('./calculateStudentScore.js')
-    let studentInfo = parseStudentInfo(stString)
+    let studentInfo = parseStudentInfo(consoleInputString)
     let studentScoreStatistics = calculateStudentScore(studentInfo)
 
     return {
