@@ -21,7 +21,7 @@ const getStudentAllInfo = consoleInputString => {
             english: studentInfo.subjectGrade.english,
             program: studentInfo.subjectGrade.program
         },
-        studentScoreStatistics:studentScoreStatistics
+        studentScoreStatistics: studentScoreStatistics
     }
 }
 
