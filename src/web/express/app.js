@@ -37,6 +37,25 @@ app.post('/add',(req,res) => {
     }
 })
 
+app.get('/printStudent', (req,res) => {
+    res.render("printStudent", {
+        hintInfo: ''
+    })
+})
+
+app.post('/print',(req,res) => {
+    let resultformat = studentServers.handleConsoleOutput(req.body.stuNo)
+    if(resultformat.lenth !== 0) {
+        res.render("showStudentScore", {
+            message: resultformat
+        })
+    }else {
+        res.render("printStudent",{
+            hintInfo: "please input true info"
+        })
+    }
+})
+
 let server = app.listen(3000,() => {
     console.log("请在浏览器访问：http://localhost:3000/")
 })

@@ -1,0 +1,16 @@
+<form action="/print" method="post">
+    <p>please input student No. of you want to print it</p>
+    <div>
+        <div><span>学号：</span><input type="text" class="form-control" id="stuNo" name="stuNo"></div>
+    </div>
+    <input type="submit" value="打印">
+</form>
+
+<div class="panel-footer">
+    <%if(hintInfo !== ''){%>
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong><%= hintInfo %></strong>
+    </div>
+    <%}%>
+</div>

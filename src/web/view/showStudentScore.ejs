@@ -1,0 +1,12 @@
+<div>
+    <%if(message) {%>
+        <%message.split('\n').map((item,index) => {%>
+            <p><%= item%></p>
+       <%}) } else {%>
+         <p>没有数据了</p>
+        <%}%>
+
+</div>
+<div>
+    <a href="/" class="btn btn-info">返回首页</a>
+</div>
