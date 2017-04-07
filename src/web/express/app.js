@@ -8,6 +8,7 @@ const bodyParser = require("body-parser")
 let app = express()
 
 app.use(bodyParser.urlencoded({extended: true}))
+app.use(express.static('src'));
 // 制定模版引擎
 app.set("view engine", 'ejs')
 
