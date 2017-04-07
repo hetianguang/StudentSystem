@@ -80,3 +80,5 @@ const handleConsoleOutput = text => {
 }
 
 consoleInput(title)
+module.exports = {handleConsoleInput:handleConsoleInput,
+    handleConsoleOutput:handleConsoleOutput}
