@@ -45,7 +45,7 @@ app.get('/printStudent', (req,res) => {
 })
 
 app.post('/print',(req,res) => {
-    let resultformat = studentServers.handleConsoleOutput(req.body.stuNo)
+    let resultformat = studentServers.handleConsoleOutput(req.body.stuNos)
     if(resultformat.lenth !== 0) {
         res.render("showStudentScore", {
             message: resultformat
