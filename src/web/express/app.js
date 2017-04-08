@@ -32,9 +32,10 @@ app.post('/add',(req,res) => {
     let addResult = studentServers.handleConsoleInput(strString)
     console.log(addResult)
     if(addResult) {
-       res.render("index",{hintInfo: `学生${req.body.name}的成绩被添加`})
+       // res.render("index",{hintInfo: `学生${req.body.name}的成绩被添加`})
+        res.status(200).json({message: `学生${req.body.name}的成绩被添加`})
     }else{
-        res.render('addStudent')
+        res.json({message:"erro"})
     }
 })
 

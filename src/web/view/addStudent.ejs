@@ -1,18 +1,6 @@
 
-<!--<form action="/add" method="post">-->
-    <!--<div>-->
-        <!--<div><span>姓名：</span><input type="text" class="form-control" id="name" name="name"></div>-->
-        <!--<div><span>学号：</span><input type="text" class="form-control" id="stuNo" name="stuNo"></div>-->
-        <!--<div><span>名族：</span><input type="text" class="form-control" id="nation" name="nation"></div>-->
-        <!--<div><span>班级：</span><input type="text" class="form-control" id="classNum" name="classNum"></div>-->
-        <!--<div><span>数学：</span><input type="text" class="form-control" id="math" name="math"></div>-->
-        <!--<div><span>语文：</span><input type="text" class="form-control" id="chinese" name="chinese"></div>-->
-        <!--<div><span>英语：</span><input type="text" class="form-control" id="english" name="english"></div>-->
-        <!--<div><span>编程：</span><input type="text" class="form-control" id="program" name="program"></div>-->
-    <!--</div>-->
-    <!--<input type="submit" value="添加学生">-->
-<!--</form>-->
 <link rel="stylesheet" href="css/bootstrap.css">
+<script src="css/jquery.js"></script>
 <style>
     div {
         margin-bottom: 10px;
@@ -20,10 +8,10 @@
 </style>
 <div style="text-align: center">
     <div>
-        <div class="alert alert-danger" id="showHint" role="alert"></div>
+        <div class="alert alert-danger" id="showHint" role="alert" hidden="true"></div>
     </div>
 
-    <form action="/add" method="post" class="form-inline">
+    <form class="form-inline">
         <div>
             <div><span>姓名：</span><input type="text" class="form-control" id="name" name="name"></div>
             <div><span>学号：</span><input type="text" class="form-control" id="stuNo" name="stuNo"></div>
@@ -36,9 +24,45 @@
         </div>
 
         <div>
-            <input type="submit" id="btnAdd" class="form-control btn btn-primary" value="添加学生"
+            <input type="button" id="btnAdd" class="form-control btn btn-primary" value="添加学生"
                    style="display: inline-block">
             <a href="/" class="btn btn-info">返回首页</a>
         </div>
     </form>
 </div>
+
+<script>
+   $(() => {
+       $('#btnAdd').click(addClick);
+   });
+   const addClick = () => {
+       let formData = {};
+       [...$("input[type='text']")].map(input => {
+           let key = $(input).attr('name');
+           let value = $(input).val();
+           return{
+               [key]:value
+           }
+       }).forEach(val => (Object.assign(formData,formData,val)))
+       $.post('/add',formData,handleAddSuccess);
+   }
+   const handleAddSuccess = (res) => {
+       let $showHint = $("#showHint")
+       if(res.message !== "erro") {
+           $showHint.text(res.message);
+           if($showHint.hasClass('alert-danger')) {
+               $showHint.removeClass('alert-danger');
+           }
+           $showHint.addClass('alert-info');
+           $('form')[0].reset()
+           $showHint.show();
+       }else {
+           $showHint.text(`请输入正确的学生信息！`);
+           if($showHint.hasClass('alertInfo')){
+               $showHint.removeClass('alert-info');
+           }
+           $showHint.addClass('alert-danger');
+           $showHint.show();
+       }
+   }
+</script>
